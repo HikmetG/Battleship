@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.media1.HelloController">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="550.0" fitWidth="600.0" preserveRatio="false" />
+      <Text fill="#273259" layoutX="191.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SCHIFFE ">
+         <font>
+            <Font name="Old English Text MT" size="42.0" />
+         </font>
+      </Text>
+      <Text fill="#273259" layoutX="154.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VERSENKEN">
+         <font>
+            <Font name="Old English Text MT" size="42.0" />
+         </font>
+      </Text>
+      <Circle fill="#4b78b5" layoutX="24.0" layoutY="380.0" onContextMenuRequested="#playMedia" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text fill="#f5f5f5" layoutX="18.0" layoutY="383.0" onMouseClicked="#playMedia" strokeType="OUTSIDE" strokeWidth="0.0" text="&gt;||" wrappingWidth="18.0">
+         <font>
+            <Font name="System Bold" size="8.0" />
+         </font>
+      </Text>
+      <Circle fill="#4b78b5" layoutX="50.0" layoutY="380.0" onMouseClicked="#pauseMedia" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text fill="WHITE" layoutX="47.0" layoutY="383.0" onMouseClicked="#pauseMedia" strokeType="OUTSIDE" strokeWidth="0.0" text="||">
+         <font>
+            <Font name="System Bold" size="8.0" />
+         </font>
+      </Text>
+      <Text fill="#c6c6e9" layoutX="238.0" layoutY="270.0" strikethrough="true" stroke="BLACK" strokeWidth="0.75" text="Multiplayer">
+         <font>
+            <Font name="Ravie" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#c6c6e9" layoutX="281.0" layoutY="307.0" onMouseClicked="#closeApp" stroke="BLACK" strokeWidth="0.75" text="Exit">
+         <font>
+            <Font name="Ravie" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#eeeaea" layoutX="534.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Version 1.0" />
+      <Button layoutX="222.0" layoutY="208.0" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="36.0" prefWidth="192.0" style="-fx-background-color: TRANSPARENT;" textFill="#c6c6e9">
+         <font>
+            <Font name="Ravie" size="20.0" />
+         </font>
+      </Button>
+      <Text fill="#c6c6e9" layoutX="235.0" layoutY="233.0" onMouseClicked="#handleButtonAction" stroke="BLACK" strokeWidth="0.75" text="Singleplayer" wrappingWidth="167.416015625">
+         <font>
+            <Font name="Ravie" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
